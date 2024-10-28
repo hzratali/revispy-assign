@@ -1,20 +1,16 @@
 {
-    "version": 2,
-    "name": "revispy-assign-backend",
-    "builds": [
+    "version" : 2,
+    "name" : "revispy-assign",
+    "builds" : [
         {
-            "src": "index.js",
-            "use": "@vercel/node"
+            "src" : "./index.js",
+            "use" : "@vercel/node"
         }
     ],
-    "routes": [
+    "routes" : [
         {
-            "src": "/api/(.*)",
-            "dest": "index.js"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "index.js"
+            "src" : "/(.*)",
+            "dest" : "/"
         }
     ]
 }
