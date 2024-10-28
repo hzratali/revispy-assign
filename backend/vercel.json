@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "revispy-assign",
+    "name": "revispy-assign-backend",
     "builds": [
         {
             "src": "index.js",
@@ -9,7 +9,7 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "index.js"
         }
     ]
